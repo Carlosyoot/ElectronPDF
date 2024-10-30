@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF MERGE - JUNTE SEUS PDFS NA SUA ORDEM</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="sidebar">
+    <button class="btn active" onclick="showSection('home')">🏠</button>
+    <button class="btn" onclick="showSection('settings')">⚙️</button>
+  </div>
+  
+  <div class="content">
+    <div id="home" class="section active">
+      <h1>INÍCIO</h1>
+      <div class="containerpdftable">
+      <table id="pdfTable">
+        <thead>
+          <tr>
+            <th>Selecionar</th>
+            <th>Nome</th>
+            <th>Data de Modificação ⬇️⬆️</th>
+            <th>Tamanho</th>
+            <th>Visualizar</th>
+          </tr>
+        </thead>
+        <tbody id="pdfList"></tbody>
+      </table>
+      </div>
+      <button id="mergeButton">Mesclar PDFs Selecionados 🔄</button>
+      
+    </div>
+
+    <div id="settings" class="section">
+      <h1>Configurações</h1>
+      <div class="directory-container">
+          <p><strong>Diretório Padrão:</strong> <span id="defaultDirectory"></span></p>
+          <button id="selectFolderButton">📁...</button> 
+      </div>
+      <button id="saveSettingsButton">Aplicar e Salvar Configurações</button>
+  </div>
+  
+
+      <div id="mergeModal" class="modal">
+        <div class="modal-content">
+            <h2>Ordenar PDFs</h2>
+            <h3>Segure e Arraste para a ordem que deseja</h3>
+            <ul id="sortableList" class="sortable-list"></ul>
+            <button id="confirmMergeButton">Confirmar Mesclagem</button>
+            <button id="closeModalButton">Cancelar</button>
+        </div>
+    </div>
+
+    
+    </div>
+  <script src="../src/components/Flow.js"></script>
+</body>
+</html>
