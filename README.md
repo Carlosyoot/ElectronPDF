@@ -2,7 +2,7 @@
 
 **ElectronPDF** é uma aplicação pessoal desenvolvida com Electron que permite gerenciar arquivos PDF de maneira fácil e eficiente. Com esta ferramenta, os usuários podem visualizar, editar e mesclar arquivos PDF diretamente de uma interface amigável e intuitiva. Ideal para quem precisa lidar com muitos documentos PDF no dia a dia. Uma alternativa mais rápida ao IlovePDF.
 
-![ElectronPDF Icon](assets/icon.png)
+![ElectronPDF Icon](assets/icon.jpg)
 
 ## Índice
 1. [Instalação](#instalação)
