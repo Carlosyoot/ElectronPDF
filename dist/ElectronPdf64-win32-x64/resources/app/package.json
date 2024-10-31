@@ -1,0 +1,25 @@
+{
+  "name": "electronpdf",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win64": "electron-packager . ElectronPdf64 --platform=win32 --arch=x64 --icon=assets/icon.png --out=dist --overwrite --executable-name=Epdf64bits",
+    "package-win32": "electron-packager . ElectronPdf32 --platform=win32 --arch=ia32 --icon=assets/icon.png --out=dist --overwrite --executable-name=Epdf32bits",
+    "package-linux": "electron-packager . ElectronPdfLinux --platform=linux --arch=x64 --icon=assets/icon.png --out=dist --overwrite --executable-name=EpdfLinux"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^33.0.2",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "electron-store": "^10.0.0",
+    "pdf-lib": "^1.17.1",
+    "sortablejs": "^1.15.3"
+  }
+  
+}
