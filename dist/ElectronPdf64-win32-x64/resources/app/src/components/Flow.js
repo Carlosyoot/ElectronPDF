@@ -152,7 +152,7 @@ document.getElementById('mergeButton').addEventListener('click', () => {
             indexSpan.classList.add('green');
         } else if (position <= 0.50) {
             indexSpan.classList.add('teal');
-        } else if (position <= 0.70 || position <= 0.90) {
+        } else if (position <= 0.70 || position <= 0.95) {
             indexSpan.classList.add('yellow');
         } else {
             indexSpan.classList.add('red');
@@ -197,14 +197,19 @@ document.getElementById('mergeButton').addEventListener('click', () => {
                 indexSpan.classList.add('green');
             } else if (position <= 0.50) {
                 indexSpan.classList.add('teal');
-            } else if (position <= 0.70 || position <= 0.90) {
+            } else if (position <= 0.70 || position <= 0.95) {
                 indexSpan.classList.add('yellow');
             } else {
                 indexSpan.classList.add('red');
             }
+    
+            // Atualizar índices dos botões
+            const viewButton = item.querySelector('.view-button');
+            const removeButton = item.querySelector('.remove-button');
+            viewButton.dataset.index = index;
+            removeButton.dataset.index = index;
         });
     }
-    ;
 
 
 
