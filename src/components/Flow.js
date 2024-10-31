@@ -148,11 +148,11 @@ document.getElementById('mergeButton').addEventListener('click', () => {
         const totalFiles = selectedFiles.length;
         const position = (index + 1) / totalFiles;
     
-        if (position <= 0.30) {
+        if (position <= 0.35) {
             indexSpan.classList.add('green');
-        } else if (position <= 0.53) {
+        } else if (position <= 0.50) {
             indexSpan.classList.add('teal');
-        } else if (position <= 0.80) {
+        } else if (position <= 0.70 || position <= 0.90) {
             indexSpan.classList.add('yellow');
         } else {
             indexSpan.classList.add('red');
@@ -193,11 +193,11 @@ document.getElementById('mergeButton').addEventListener('click', () => {
             const position = (index + 1) / totalFiles;
     
             indexSpan.className = 'index';
-            if (position <= 0.25) {
+            if (position <= 0.35) {
                 indexSpan.classList.add('green');
-            } else if (position <= 0.5) {
+            } else if (position <= 0.50) {
                 indexSpan.classList.add('teal');
-            } else if (position <= 0.75) {
+            } else if (position <= 0.70 || position <= 0.90) {
                 indexSpan.classList.add('yellow');
             } else {
                 indexSpan.classList.add('red');
